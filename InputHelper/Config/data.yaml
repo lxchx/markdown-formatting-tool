@@ -1,0 +1,38 @@
+data:
+  -
+    display_text: 粗体
+    description: 添加/移除粗体效果
+    operation: "**$**"
+  -
+    display_text: 斜体
+    description: 添加/移除斜体效果
+    operation: "_$_"
+  -
+    display_text: 粗斜体
+    description: 添加/移除粗斜体效果
+    operation: "***$***"
+  -
+    display_text: 删除线
+    description: 添加/移除删除线效果
+    operation: "~~$~~"
+  -
+    display_text: 下划线
+    description: 添加/移除下划线效果
+    operation: "<u>$</u>"
+  -
+    display_text: 分割线
+    description: 添加分割线
+    operation: "----------"
+  -
+    display_text: 代码块
+    description: 添加/移除代码块（选中内容作为代码语言）
+    operation: "```$\n\n```"
+  -
+    display_text: 表格
+    description: 添加表格
+    operation: "|  表头   | 表头  |\n|  ----  | ----  |\n| 单元格  | 单元格 |\n| 单元格  | 单元格 |"
+  -
+    display_text: 图片
+    description: 添加/移除图片（选中内容作为图片地址）
+    operation: "![]($)"
+  
