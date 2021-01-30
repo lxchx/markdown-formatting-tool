@@ -70,6 +70,8 @@ Window {
 
                         onEntered: hovered = true
                         onExited: hovered = false
+
+                        onPressed: tool.edit()
                     }
 
                     Label {

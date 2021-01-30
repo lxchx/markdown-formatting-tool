@@ -10,6 +10,8 @@ import pyautogui
 
 import pyperclip
 
+import os
+
 from Utils import FocusSetter, InputUtils, ListModel
 
 from Utils.ListModel import ListModel
@@ -39,6 +41,10 @@ class MainTool(QObject):
         data = data['data']
         mod.setItems(data)
 
+    @pyqtSlot()
+    def edit(self):
+        os.system("start "+ r'Config\data.yaml') 
+
 
     @pyqtSlot(str)
     def oparate(self, opa: str):
@@ -59,8 +65,6 @@ class MainTool(QObject):
 
         pyperclip.copy(last_clip)
 
-        
-        
 
     @pyqtProperty(ListModel)
     def model(self) -> ListModel:
